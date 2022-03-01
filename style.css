@@ -1,0 +1,30 @@
+body{
+	font-size:24px;
+	background-color:purple;
+}
+#container{
+width: 1200px;	
+margin: auto;
+background-color: cyan;
+padding: 10px;
+padding-color:red;
+text-align:center;
+}
+#wstep{
+	text-aling:center;
+	padding:10px;
+}
+
+#footer{
+	margin-top: 50px;
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+    border: 5px solid blue;
+	letter-spacing: 3px;
+
+}
+#zakresy{
+	border: 3px solid red;
+	
+}
