@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Kalkulator BMI </title>
+	<meta name="keywords" content="Kalkulator BMi" />
+
+
+	<script type="text/javascript" >
+
+function obliczanie(){
+    var wzrost = document.getElementById("wzrost").value;
+    wzrost = parseFloat(wzrost);
+	wzrost = wzrost/100;
+ var waga = document.getElementById("waga").value;
+    waga = parseFloat(waga);
+	var wynik =  waga / (wzrost * wzrost);
+	
+    document.getElementById("wynik").innerHTML = wynik + " BMI";
+}
+
+</script>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+
+<div id="container"> 
+<div id="wstep"><center> <h1><strong>Kalkulator BMI</strong></h1></center></div>
+
+<h2>Wpisz swoją wagę</h2>
+<p></p>
+<div id="1">Wzrost:  <input type="text" dir="rtl" id="wzrost"> cm</div>
+<div id="2">Waga:  <input type="text" dir="rtl" id="waga"> kg</div>
+
+
+        <input type="button" value="Oblicz BMI" onclick="obliczanie()"/> 
+
+        <div class = "wynik" id="wynik"> </div>
+    
+
+
+
+
+<p></p>
+<div id="zakresy"><h4>Zakresy wartości BMI:<p></p>
+
+mniej niż 16 - wygłodzenie<p></p>
+16 - 16.99 - wychudzenie<p></p>
+17 - 18.49 - niedowaga<p></p>
+18.5 - 24.99 - wartość prawidłowa<p></p>
+25 - 29.99 - nadwaga<p></p>
+30 - 34.99 - I stopień otyłości<p></p>
+35 - 39.99 - II stopień otyłości<p></p>
+powyżej 40 - otyłość skrajna</h4></div>
+<div id="footer">===================================</div>
+
+<script  type="text/javascript" >
+
+</script>
+
+</div>
+</body>
+</html>
