@@ -1,11 +1,11 @@
 body{
 	font-size:24px;
-	background-color:purple;
+	background-color:#f5f7fa;
 }
 #container{
 width: 1200px;	
 margin: auto;
-background-color: cyan;
+background-color: white;
 padding: 10px;
 padding-color:red;
 text-align:center;
